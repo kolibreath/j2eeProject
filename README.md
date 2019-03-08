@@ -20,7 +20,10 @@
 # 测试工具
 # 需求和设计建模
 # 原型工具
-- axure
+- Axure
+## 原型工具的使用
+- 在[Axure官网下载](https://www.axure.com/download)Axure
+- 安装即可使用，[如何使用可以看教程](http://www.woshipm.com/rp/39203.html)
 # 集成开发环境
 [IDEA 的快捷键(http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/keymap-introduce.html)
 ## 集成开发环境的配置
