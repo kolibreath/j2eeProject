@@ -6,19 +6,23 @@
 - 使用新的软件测试方法
 
 # 版本控制工具
-- git
+[git的使用](https://www.jianshu.com/p/67afe711c731)
 # 项目进度管理工具
 - 项目要求，功能结果
 - 通信工具
     - dingding
+# 项目甘特图
+# 技能矩阵
 # 文档管理工具
+    - [文档标记语言(https://github.com/younghz/Markdown）
+            
 # 版本控制
 # 测试工具
 # 需求和设计建模
 # 原型工具
 - axure
 # 集成开发环境
-- [IDEA 的快捷键()
+[IDEA 的快捷键(http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/keymap-introduce.html)
 ## 集成开发环境的配置
 
 - backend
