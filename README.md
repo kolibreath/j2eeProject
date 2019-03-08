@@ -14,7 +14,7 @@
 # 项目甘特图
 # 技能矩阵
 # 文档管理工具
-    - [文档标记语言(https://github.com/younghz/Markdown）
+    - [文档标记语言](https://github.com/younghz/Markdown）
             
 # 版本控制
 # 测试工具
