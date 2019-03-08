@@ -18,7 +18,8 @@
 # 文档管理工具
 
 - [mardown](https://im.dingtalk.com)
-            
+
+# 可行性分析文档
 # 版本控制
 # 测试工具
 # 需求和设计建模
@@ -36,5 +37,6 @@
     <br>使用one.ccnu.edu.cn 的学生邮箱在[jet-brains 学生账号](https://www.jetbrains.com/zh/student/)注册一个学生账号
 - [intelliJ 进行开发jsp配置和helloworld](https://www.jianshu.com/p/9684e90cf7b5)<br>
 如果使用的是最新版的idea，实际上和这个教程配置有点不相同，设置了新的tomcat之后，下方会出现一个红色字表示的warning：提示你的artifacts没有配置，点击fix就完成了自动配置，不需要再进行这一步配置
-
-- 
+- 数据库
+    - mysql
+    - 推荐使用 [mysql终端加强工具](https://www.cnblogs.com/EasonJim/p/9041991.html) 
