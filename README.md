@@ -11,11 +11,13 @@
 - 项目要求，功能结果
 - 通信工具
     - dingding
+        - [dingding网页版](https://im.dingtalk.com)
+        - [dingding客户端](https://tms.dingtalk.com/markets/dingtalk/download?spm=a3140.8736650.2231602.9.517c5c8coj7u5y&source=1001&lwfrom=20171202020920642360610305)
 # 项目甘特图
 # 技能矩阵
 # 文档管理工具
-- 文档
-    [文档标记语言](https://github.com/younghz/Markdown）
+
+- [mardown](https://im.dingtalk.com)
             
 # 版本控制
 # 测试工具
@@ -26,7 +28,7 @@
 - 在[Axure官网下载](https://www.axure.com/download)Axure
 - 安装即可使用，[如何使用可以看教程](http://www.woshipm.com/rp/39203.html)
 # 集成开发环境
-[IDEA 的快捷键(http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/keymap-introduce.html)
+[IDEA 的快捷键](http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/keymap-introduce.html)
 ## 集成开发环境的配置
 
 - backend
@@ -34,7 +36,5 @@
     <br>使用one.ccnu.edu.cn 的学生邮箱在[jet-brains 学生账号](https://www.jetbrains.com/zh/student/)注册一个学生账号
 - [intelliJ 进行开发jsp配置和helloworld](https://www.jianshu.com/p/9684e90cf7b5)<br>
 如果使用的是最新版的idea，实际上和这个教程配置有点不相同，设置了新的tomcat之后，下方会出现一个红色字表示的warning：提示你的artifacts没有配置，点击fix就完成了自动配置，不需要再进行这一步配置
-```
-4. JavaWeb测试4.1 Run -> Edit Configurations，进入“Run Configurations”窗口，选择之前配置好的Tomcat，点击“Deployment”选项卡，点击“+” -> “Artifact”-> 选择创建的web项目的Artifact...修改“Application context”-> Apply -> OK
-```
+
 - 
