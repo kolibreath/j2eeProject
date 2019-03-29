@@ -13,7 +13,9 @@
     - dingding
         - [dingding网页版](https://im.dingtalk.com)
         - [dingding客户端](https://tms.dingtalk.com/markets/dingtalk/download?spm=a3140.8736650.2231602.9.517c5c8coj7u5y&source=1001&lwfrom=20171202020920642360610305)
-# 项目甘特图
+# 项目任务表
+    - 项目子任务图
+    - 项目甘特图
 # 技能矩阵
 # 文档管理工具
 
@@ -39,4 +41,5 @@
 如果使用的是最新版的idea，实际上和这个教程配置有点不相同，设置了新的tomcat之后，下方会出现一个红色字表示的warning：提示你的artifacts没有配置，点击fix就完成了自动配置，不需要再进行这一步配置
 - 数据库
     - mysql
-    - 推荐使用 [mysql终端加强工具](https://www.cnblogs.com/EasonJim/p/9041991.html) 
+    - 推荐使用 [mysql终端加强工具](https://www.cnblogs.com/EasonJim/p/9041991.html)
+    - [mycli 的使用](https://linux.cn/article-8575-1.html) 
