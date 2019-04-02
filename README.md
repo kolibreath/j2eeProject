@@ -13,6 +13,9 @@
     - dingding
         - [dingding网页版](https://im.dingtalk.com)
         - [dingding客户端](https://tms.dingtalk.com/markets/dingtalk/download?spm=a3140.8736650.2231602.9.517c5c8coj7u5y&source=1001&lwfrom=20171202020920642360610305)
+# 软件工程需求文档模板
+- [需求文档模板](https://blog.csdn.net/qq_33556185/article/details/51745708)
+- [一个需求文档的实际举例](https://wenku.baidu.com/view/2c8a2e2a3169a4517723a3d3.html)
 # 项目任务表
     - 项目子任务图
     - 项目甘特图
