@@ -43,6 +43,8 @@
 # 项目参与者的技能矩阵
 ![image.png](https://upload-images.jianshu.io/upload_images/4714178-cfa0d66685259163.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 # 需求分析
+- 需求分析规格说明大纲
+![](https://upload-images.jianshu.io/upload_images/4714178-03ad03c479b2eed0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 - 需求分析
 实现一个基本的分析文档，需求人和对接人描述清楚，czk整理成一个详细的需求文档<br>
 - 明确需求中的父子系统
@@ -50,6 +52,7 @@
 
 ## 需求分析任务分配
 > 秦博
+
 超话分类 检索 固定板块 
 
 > 于田
@@ -70,7 +73,9 @@
 
 ### 需要在需求分析完成后
 
-- 需要绘制数据流图，各个部分的同学将手绘的数据流图发给czk，之后通过图形绘制等方式保存这个模块的数据流结果<br>
+- 绘制数据流图
+    - [绘制数据流图 例子1](https://wenku.baidu.com/view/42a915751711cc7931b716ce.html)
+    - [绘制数据流图 例子2](https://wenku.baidu.com/view/8a244561657d27284b73f242336c1eb91a3733a7.html)
 - 数据字典
 这个部分可先有数据库开发人员商量好数据类型，然后写一个markdown文档，再整理成数据字典文档
 - E-R图
@@ -79,6 +84,8 @@
 # 开发职能分工情况
 按照模块分工，需要画出甘特图
 
+# 软件生命周期
+确定软件生命周期
 # 开发中
 - 数据库的构建
 E-R图
