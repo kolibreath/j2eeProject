@@ -15,6 +15,7 @@
 主要功能：
 - 超话
     - 超话分类
+    类似于以下的图片的例子
     ![0E49F4FB70A1CD44488AC99EB0EF3F73.png](https://upload-images.jianshu.io/upload_images/4714178-e29bc2b32075c5b6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
     - 超话检索(搜索某一个超话)
     - 超话内检索（检索某一个超话）
