@@ -9,7 +9,7 @@
 6. 任务依赖情况 有依赖的任务标注如下，请及时完成避免给后面同学造成负担
 
 ![任务依赖](https://upload-images.jianshu.io/upload_images/4714178-db4f01a2858539d2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+    
 
 |任务内容|负责人|备注|
 |:-----:|:-----:|:------:|
