@@ -5,8 +5,8 @@
 4. 权限 绘制数据流图的同学如果觉得有不合理的地方可以修改需求文档再标注，最后提交的时候说明即可。
 5. 完成情况 主催在催的之前会查看完成情况 完成的同学使用markdown语法``删除语法``标注删除的内容，：如~~已经完成~~ 
 <br>
-修改可以在github页面上执行，右上角 edit-> 修改 -> preview changes 查看 是否修改成功 -> commit files
-6. 任务依赖情况 有依赖的任务标注如下，请及时完成避免给后面同学造成负担
+修改可以在github页面上执行，右上角 edi-> 修改 -> preview changes 查看 是否修改成功 -> commit files
+6. 任务依赖情况 依赖的任务标注如下，请及时完成避免给后面同学造成负担
 ![任务依赖](https://upload-images.jianshu.io/upload_images/4714178-db4f01a2858539d2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
@@ -30,3 +30,4 @@
 
 备注1：石泽远任务量比较大，绘制甘特度任务需要在详细项目计划之后完成，所以需要龙哥提前熟悉和配置好所需软件环境和熟悉如何做甘特图，石泽远会给你一个文档的形式作为详细任务安排。
 
+任务依赖模型：[完成文档连接](https://www.processon.com/view/link/5cbbb262e4b0841b84387a94)
