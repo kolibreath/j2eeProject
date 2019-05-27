@@ -22,3 +22,64 @@ Spring initializr -> 勾选项目 web ，template engines 中选择 thymeleaf �
 #Spring boot 链接mysql
 Springboot 中我们使用的是jpa 去链接mysql 数据库
 [jpa 链接数据库的方法](https://blog.csdn.net/jinbaosite/article/details/77587600)
+
+## Sprig boot 链接mysql
+- 相关配置
+```
+# 服务器访问端口
+server.port=8080
+# 数据库基本配置 连接到你的test 数据库
+# 显式声明你的用户 名和密码
+spring.datasource.url=jdbc:mysql://127.0.0.1:3306/staff_management
+spring.datasource.username=kolibreath
+spring.datasource.password=szypride
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+
+spring.jpa.database=MYSQL
+# 显示后台处理的SQL语句
+spring.jpa.show-sql=true
+# 自动检查实体和数据库表是否一致，如果不一致则会进行更新数据库表
+spring.jpa.hibernate.ddl-auto=update
+```
+注意最后一行，使用最后一行会在启动数据库的时候drop掉你的表
+## 编写相关类
+[参考博客](https://juejin.im/post/5aa733af518825558a0646fb)
+数据库中的表不需要手动编写，但是数据库本身还是需要创建的
+
+<br>
+打开终端
+```
+create database staff_management
+
+```
+创建项目需要的数据库
+
+## 创建实体类
+```
+@Entity
+@Table(name ="staff")
+public class Staff {
+
+    @Id
+    private int staffId;
+
+    @Column(length = 255)
+    private int staffType;
+
+    @Column(length = 255)
+    private String name;
+
+
+    @Column(length = 255)
+    private String title;
+}
+```
+在application类上修改注解成：
+```
+@EnableAutoConfiguration
+@RestController
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
+
+```
+如果``EnableAutoConfiguration``提示redundant annotation，大可不必理他<br>
+然后确认properties文件没有问题,点``run``看看staff_management中又没有出现staff表
