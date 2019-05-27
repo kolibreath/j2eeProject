@@ -21,3 +21,4 @@ Spring initializr -> 勾选项目 web ，template engines 中选择 thymeleaf �
 
 #Spring boot 链接mysql
 Springboot 中我们使用的是jpa 去链接mysql 数据库
+[jpa 链接数据库的方法](https://blog.csdn.net/jinbaosite/article/details/77587600)
