@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/j2ee-final.iml" filepath="$PROJECT_DIR$/.idea/j2ee-final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/j2eefinal/j2eefinal.iml" filepath="$PROJECT_DIR$/code/j2eefinal/j2eefinal.iml" />
     </modules>
   </component>
 </project>
