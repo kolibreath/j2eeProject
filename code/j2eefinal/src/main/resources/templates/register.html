@@ -21,18 +21,8 @@
                                   <!--name="departmentId" required><br> <br>-->
     <!--</div>-->
 
-    <div>
-        fuck
-        <div th:each="department: ${departments}">
-            <!--<td th:text="${student.id}" />-->
-            <td th:text="${{department.departmentName}}" />
-        </div>
-    </div>
-
-
     <td>
         <select name = "部门名称" id ="departmentId">
-              <option vlaue="2">第一篇文章</option>
               <option th:each="department : ${departments}"
                       th:value="${department.departmentName}"
                       th:utext="${department.departmentName}"></option>

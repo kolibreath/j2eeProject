@@ -3,6 +3,7 @@ package com.kolibreath.j2eefinal;
 import com.kolibreath.j2eefinal.entity.Department;
 import com.kolibreath.j2eefinal.entity.Staff;
 import com.kolibreath.j2eefinal.entity.StaffInfo;
+import com.kolibreath.j2eefinal.model.Employee;
 import com.kolibreath.j2eefinal.repo.DepartmentRepo;
 import com.kolibreath.j2eefinal.repo.StaffInfoRepo;
 import com.kolibreath.j2eefinal.repo.StaffRepo;
@@ -18,12 +19,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
@@ -98,6 +96,9 @@ public class J2eefinalApplication {
 	}
 
 	private void initData(){
+		List<Department> list = departmentRepo.findAll();
+		if(list.size() != 0)
+			return;
 		Department department = new Department();
 		department.setDepartmentName("研发部门");
 		department.setSiginStartTime(9);
@@ -143,6 +144,8 @@ public class J2eefinalApplication {
 	public String login(HttpServletRequest request){
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
+		int curStaff= staffInfoRepo.findByUsernameAndPassword(username,password).get(0).getId();
+		Common.currentStaffId = curStaff;
 		return "success";
 	}
 
@@ -151,14 +154,14 @@ public class J2eefinalApplication {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		String a[] = request.getParameterValues("部门名称");
-		int departmentId = Integer.parseInt(request.getParameter("departmentId"));
+		int departmentId = departmentRepo.findByDepartmentName(a[0]).get(0).getDepartId();
 
 		StaffInfo info = new StaffInfo();
 		info.setUsername(username);
 		info.setPassword(password);
 		staffInfoRepo.save(info);
 
-		int staffInfoId = staffInfoRepo.findByUsernameAndPassword(username,password)
+		int staffInfoId = staffInfoRepo.findByUsernameAndPassword(username,password).get(0)
 				.getId();
 		Staff staff  = new Staff();
 
