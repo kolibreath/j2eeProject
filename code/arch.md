@@ -48,13 +48,14 @@ spring.jpa.hibernate.ddl-auto=update
 
 <br>
 打开终端
+
 ```
 create database staff_management
-
 ```
 创建项目需要的数据库
 
 ## 创建实体类
+
 ```
 @Entity
 @Table(name ="staff")
@@ -74,7 +75,10 @@ public class Staff {
     private String title;
 }
 ```
+
 在application类上修改注解成：
+
+
 ```
 @EnableAutoConfiguration
 @RestController
@@ -83,3 +87,14 @@ public class Staff {
 ```
 如果``EnableAutoConfiguration``提示redundant annotation，大可不必理他<br>
 然后确认properties文件没有问题,点``run``看看staff_management中又没有出现staff表
+
+## Spring 访问静态资源
+```
+- static
+- templates
+- resources
+```
+``static``表示静态资源，表示直接通过浏览器中的url访问，如果要使用``@Controller`` 跳转到另外的页面去需要放在templates下yy
+
+## Spring 传递数据给html
+[传递数据](https://blog.csdn.net/weixin_36380516/article/details/78668199)
