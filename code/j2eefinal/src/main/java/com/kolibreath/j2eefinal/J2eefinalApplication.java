@@ -1,10 +1,12 @@
 package com.kolibreath.j2eefinal;
 
 import com.kolibreath.j2eefinal.entity.Department;
+import com.kolibreath.j2eefinal.entity.PunchCard;
 import com.kolibreath.j2eefinal.entity.Staff;
 import com.kolibreath.j2eefinal.entity.StaffInfo;
 import com.kolibreath.j2eefinal.model.Employee;
 import com.kolibreath.j2eefinal.repo.DepartmentRepo;
+import com.kolibreath.j2eefinal.repo.PunchCardRepo;
 import com.kolibreath.j2eefinal.repo.StaffInfoRepo;
 import com.kolibreath.j2eefinal.repo.StaffRepo;
 import com.kolibreath.j2eefinal.scheduler.CollectionPunchJob;
@@ -25,6 +27,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
+
 @EnableAutoConfiguration
 @Controller
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
@@ -35,9 +38,10 @@ public class J2eefinalApplication {
 	StaffInfoRepo staffInfoRepo;
 	@Autowired
 	DepartmentRepo departmentRepo;
-
 	@Autowired
 	StaffRepo staffRepo;
+	@Autowired
+	PunchCardRepo punchCardRepo;
 
 	private void startJobs(){
 		JobDetail startPunchDetail  = JobBuilder.newJob(StartPunchJob.class)
@@ -176,6 +180,29 @@ public class J2eefinalApplication {
 		return "success";
 	}
 
+
+	@RequestMapping("/showFunctions")
+	public String showFunctions(){
+		return "function";
+	}
+
+
+	@RequestMapping("/test")
+	public String test(){
+		return "show_record";
+	}
+
+	//todo 注意处理传来的数据
+	@RequestMapping("show_record")
+	public ModelAndView showRecords(){
+		int staffId = 14;
+		List<PunchCard> punchCards = punchCardRepo.findByStaffId(staffId);
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("/show_record");
+		modelAndView.addObject("punchCardRecords",punchCards);
+		return modelAndView;
+	}
+
 	public static void main(String[] args) {
 
 		SpringApplication.run(J2eefinalApplication.class, args);
@@ -183,3 +210,5 @@ public class J2eefinalApplication {
 	}
 
 }
+
+

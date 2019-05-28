@@ -8,6 +8,7 @@ import javax.persistence.*;
 public class Staff {
 
     @Id
+    @GeneratedValue
     private int id;
 
     @Column
