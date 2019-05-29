@@ -34,19 +34,26 @@
 <div id="messageDiv"></div>
 
 <script>
-    $('#sender').click(function(){
-        var url="";
-        $.get(
-            url,
-            function(data) {
-                var categorys = data;
-                for(i in categorys){
-                    var old = $("#messageDiv").html();
-                    var category = categorys[i];
-                    $("#messageDiv").html(old + "<br>"+category.id+"   -----   "+category.name);
+    function sendRequest(){
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET','http://localhost:8080/show_record');
+        xhr.setRequestHeader('Content-Type','application/x-www-form-urlencode;charset=utf-8');
+        xhr.onreadystatechange = ()=>{
+            if(xhr.readyState === 4){
+
+                if(xhr.status >= 200 && xhr.status < 300){
+                    let string = xhr.responseText;
+                    let obj = JSON.parse(string);
+                    console.log(obj[0].staffId);
+                    //无法修改
+                    document.getElementById("punch_card_status").innerText = xhr.responseText;
+                } else if(xhr.status >= 400){
+                    console.log('请求失败');
                 }
-            });
-    });
+            }
+        };
+        xhr.send();
+    }
 </script>
 
 </body>
