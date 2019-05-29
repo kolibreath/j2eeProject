@@ -2,9 +2,6 @@ package com.kolibreath.j2eefinal;
 
 import com.kolibreath.j2eefinal.entity.Department;
 import com.kolibreath.j2eefinal.entity.PunchCard;
-import com.kolibreath.j2eefinal.entity.Staff;
-import com.kolibreath.j2eefinal.entity.StaffInfo;
-import com.kolibreath.j2eefinal.model.Employee;
 import com.kolibreath.j2eefinal.repo.DepartmentRepo;
 import com.kolibreath.j2eefinal.repo.PunchCardRepo;
 import com.kolibreath.j2eefinal.repo.StaffInfoRepo;
@@ -16,21 +13,18 @@ import com.kolibreath.j2eefinal.scheduler.StopPunchJob;
 import org.quartz.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 
-@EnableAutoConfiguration
 @Controller
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
+@SpringBootApplication
+@ComponentScan (basePackages = {"com.kolibreath.j2eefinal.repo","com.kolibreath.j2eefinal.controller"})
 public class J2eefinalApplication {
 
 	//AutoWired
@@ -130,55 +124,6 @@ public class J2eefinalApplication {
 		return "index";
 	}
 
-	@RequestMapping("/login")
-	public String login(){
-		return "login";
-	}
-
-	@RequestMapping("/register")
-	public ModelAndView register(){
-		List<Department> departments = departmentRepo.findAll();
-		ModelAndView  model = new ModelAndView();
-		model.setViewName("/register");
-		model.addObject("departments",departments);
-		return model;
-	}
-
-	@RequestMapping("/dologin")
-	public String login(HttpServletRequest request){
-		String username = request.getParameter("username");
-		String password = request.getParameter("password");
-		int curStaff= staffInfoRepo.findByUsernameAndPassword(username,password).get(0).getId();
-		Common.currentStaffId = curStaff;
-		return "success";
-	}
-
-	@RequestMapping("/doregister")
-	public String register(HttpServletRequest request){
-		String username = request.getParameter("username");
-		String password = request.getParameter("password");
-		String a[] = request.getParameterValues("部门名称");
-		int departmentId = departmentRepo.findByDepartmentName(a[0]).get(0).getDepartId();
-
-		StaffInfo info = new StaffInfo();
-		info.setUsername(username);
-		info.setPassword(password);
-		staffInfoRepo.save(info);
-
-		int staffInfoId = staffInfoRepo.findByUsernameAndPassword(username,password).get(0)
-				.getId();
-		Staff staff  = new Staff();
-
-		staff.setStaffId(staffInfoId);
-		staff.setDepartmentId(departmentId);
-		staff.setName(username);
-		staff.setSalary(CalUtils.randomSalary());
-		staff.setStaffType(CalUtils.randomType());
-		staff.setTitle(CalUtils.randomTitle(departmentId));
-
-		staffRepo.save(staff);
-		return "success";
-	}
 
 
 	@RequestMapping("/showFunctions")
@@ -187,22 +132,12 @@ public class J2eefinalApplication {
 	}
 
 
-	@RequestMapping("/test")
+
+	//前端请求 返回这个页面
+	@RequestMapping("/showRecord")
 	public String test(){
 		return "show_record";
 	}
-
-	//todo 注意处理传来的数据
-	@RequestMapping("show_record")
-	public ModelAndView showRecords(){
-		int staffId = 14;
-		List<PunchCard> punchCards = punchCardRepo.findByStaffId(staffId);
-		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.setViewName("/show_record");
-		modelAndView.addObject("punchCardRecords",punchCards);
-		return modelAndView;
-	}
-
 	public static void main(String[] args) {
 
 		SpringApplication.run(J2eefinalApplication.class, args);

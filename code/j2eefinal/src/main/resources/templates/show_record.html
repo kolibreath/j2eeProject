@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <title>展示前三天签到情况</title>
 </head>
 <body>
+<!--动态渲染内容-->
+<table border="1">
+    <!--行-->
+    <tr>
+        <th>员工姓名</th>
+        <th>签到时间</th>
+        <th>签退时间</th>
+        <th>签到状态</th>
+        <th>申请修改</th>
+    </tr>
+    <tr th:each="info,infoStat : ${Infos}" >
+        <td th:text="${info.userName}"></td>
+        <td th:text="${info.mail}"></td>
+        <th th:text="${infoStat.index}"></th>
+        <th th:text="${infoStat.count}"></th>
+        <th th:text="${infoStat.size}"></th>
+        <th th:text="${infoStat.even}"></th>
+        <th th:text="${infoStat.odd}"></th>
+        <th th:text="${infoStat.first}"></th>
+        <th th:text="${infoStat.last}"></th>
+    </tr>
+</table>
 
+<input type="button" value="通过AJAX获取多个分类对象" id="sender">
+
+<div id="messageDiv"></div>
+
+<script>
+    $('#sender').click(function(){
+        var url="";
+        $.get(
+            url,
+            function(data) {
+                var categorys = data;
+                for(i in categorys){
+                    var old = $("#messageDiv").html();
+                    var category = categorys[i];
+                    $("#messageDiv").html(old + "<br>"+category.id+"   -----   "+category.name);
+                }
+            });
+    });
+</script>
 
 </body>
 </html>
+
