@@ -64,6 +64,25 @@ public class CalUtils {
 
         return titles[i][j];
     }
+
+
+    //返回状态
+    public static String getStatus(int status){
+//        public static final int ON_TIME = 0;
+//        public static final int ARRIVE_LATE =1 ;
+//        public static final int LEAVE_EARLY =2 ;
+//        public static final int WORK_LATE =3 ;
+//        public static final int BUSINESS_TRIP =4 ;
+
+        switch (status){
+            case 0 : return "准点";
+            case 1: return "迟到";
+            case 2 : return "早退";
+            case 3 : return "加班";
+            case 4: return "出差";
+            default: return "准点";
+        }
+    }
     //计算员工月工资
 
     //

@@ -19,6 +19,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 
@@ -133,13 +135,28 @@ public class J2eefinalApplication {
 
 
 
-	//前端请求 返回这个页面
-	@RequestMapping("/showRecord")
-	public String test(){
-		return "show_record";
-	}
 	public static void main(String[] args) {
 
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+		try {
+			long time = format.parse("2019-05-25-06-30-00").getTime();
+			System.out.println(time);
+			time = format.parse("2019-05-25-16-30-00").getTime();
+
+			System.out.println(time);
+			time = format.parse("2019-05-26-07-59-00").getTime();
+			System.out.println(time);
+			time = format.parse("2019-05-26-18-30-00").getTime();
+
+			System.out.println(time);
+			time = format.parse("2019-05-27-06-30-00").getTime();
+			System.out.println(time);
+			time = format.parse("2019-05-27-19-30-00").getTime();
+			System.out.println(time);
+
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
 		SpringApplication.run(J2eefinalApplication.class, args);
 
 	}

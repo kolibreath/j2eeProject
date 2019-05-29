@@ -14,47 +14,33 @@
         <th>签到时间</th>
         <th>签退时间</th>
         <th>签到状态</th>
-        <th>申请修改</th>
+        <th>record Id</th>
     </tr>
-    <tr th:each="info,infoStat : ${Infos}" >
-        <td th:text="${info.userName}"></td>
-        <td th:text="${info.mail}"></td>
-        <th th:text="${infoStat.index}"></th>
-        <th th:text="${infoStat.count}"></th>
-        <th th:text="${infoStat.size}"></th>
-        <th th:text="${infoStat.even}"></th>
-        <th th:text="${infoStat.odd}"></th>
-        <th th:text="${infoStat.first}"></th>
-        <th th:text="${infoStat.last}"></th>
+
+    <tr th:each="record,recordStats : ${records}" >
+        <td th:text="${record.staffName}"></td>
+        <td th:text="${record.signInTime}"></td>
+        <th th:text="${record.signOutTime}"></th>
+        <th th:text="${record.status}"></th>
+        <th th:text="${record.recordId}"></th>
     </tr>
 </table>
 
-<input type="button" value="通过AJAX获取多个分类对象" id="sender">
+<form action="/application" accept-charset="utf-8" method="post">
+    <div>
+        <label>记录Id
+        </label>
+        <input type="text" class="text" id="recordId" placeholder="记录Id" name="recordId" required tabindex="1">
+    </div>
 
-<div id="messageDiv"></div>
-
-<script>
-    function sendRequest(){
-        let xhr = new XMLHttpRequest();
-        xhr.open('GET','http://localhost:8080/show_record');
-        xhr.setRequestHeader('Content-Type','application/x-www-form-urlencode;charset=utf-8');
-        xhr.onreadystatechange = ()=>{
-            if(xhr.readyState === 4){
-
-                if(xhr.status >= 200 && xhr.status < 300){
-                    let string = xhr.responseText;
-                    let obj = JSON.parse(string);
-                    console.log(obj[0].staffId);
-                    //无法修改
-                    document.getElementById("punch_card_status").innerText = xhr.responseText;
-                } else if(xhr.status >= 400){
-                    console.log('请求失败');
-                }
-            }
-        };
-        xhr.send();
-    }
-</script>
+    <div>
+        <label>理由</label><input type="text" class="text" id="reason" placeholder="申请理由" required name="reason" tabindex="2"><br>
+    </div>
+    <br>
+    <div>
+        <button type="submit" value="确认" id="confirm">确认申请</button>
+    </div>
+</form>
 
 </body>
 </html>
