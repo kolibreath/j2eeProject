@@ -103,13 +103,13 @@ public class J2eefinalApplication {
 		Department department = new Department();
 		department.setDepartmentName("研发部门");
 		department.setSiginStartTime(9);
-		department.setSignoutStartTime(9);
+		department.setSignoutStartTime(21);
 		departmentRepo.save(department);
 
 		Department department1 = new Department();
 		department1.setDepartmentName("设计部门");
 		department1.setSiginStartTime(9);
-		department1.setSignoutStartTime(6);
+		department1.setSignoutStartTime(18);
 		departmentRepo.save(department1);
 
 		new Department();
@@ -117,14 +117,14 @@ public class J2eefinalApplication {
 		department2 = new Department();
 		department2.setDepartmentName("主管部门");
 		department2.setSiginStartTime(9);
-		department2.setSignoutStartTime(4);
+		department2.setSignoutStartTime(17);
 		departmentRepo.save(department2);
 	}
 
 	private void initData2() {
 		//生成打卡记录
 		String date = "2019-04-";
-		for (int i = 10; i <= 30; i++) {
+		for (int i = 1; i <= 30; i++) {
 			String signIn = "";
 			String signOut = "";
 			String curDate = date;
@@ -134,10 +134,11 @@ public class J2eefinalApplication {
 			String day = "";
 			if (i / 10 == 0) {
 				day = "0" + i;
-				signInHour = (int) (new Random().nextDouble() * 10 % 5 + 7);
-				signOutHour = (int) (new Random().nextDouble() * 10 % 6 + 12);
-			} else
+			} else {
 				day = String.valueOf(i);
+			}
+			signInHour = ((int) ((new Random().nextDouble())*10)%5) + 5;
+			signOutHour = ((int) ((new Random().nextDouble())*10)%7) + 12;;
 
 			curDate = curDate + day;
 			//签到时间 hour
@@ -159,7 +160,7 @@ public class J2eefinalApplication {
 			PunchCard card = new PunchCard();
 			card.setSignInStamp(sigintime);
 			card.setSignOutStamp(signouttime);
-			card.setStaffId(14);
+			card.setStaffId(326);
 			card.setDate(curDate);
 
 			punchCardRepo.save(card);
@@ -169,7 +170,8 @@ public class J2eefinalApplication {
 	@RequestMapping("/index")
 	public String index(){
 		startJobs();
-//		initData();
+		collect();
+		initData();
 //		initData2();
 		return "index";
 	}
@@ -182,6 +184,9 @@ public class J2eefinalApplication {
 	}
 
 
+	private  void collect(){
+		CalUtils.collectionPunchCard(staffRepo,punchCardRepo,departmentRepo);
+	}
 	public static int randomSixty(){
 		return Math.abs(new Random().nextInt()*100 +new Random().nextInt()*10) %60;
 	}
@@ -189,7 +194,7 @@ public class J2eefinalApplication {
 	public static void main(String[] args) throws ParseException {
 
 		SpringApplication.run(J2eefinalApplication.class, args);
-		}
+	}
 
 }
 

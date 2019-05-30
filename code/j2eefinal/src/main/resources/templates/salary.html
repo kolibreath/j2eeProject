@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<<html xmlns:th="http://www.thymeleaf.org">>
+<head>
+    <meta charset="UTF-8">
+    <title>工资</title>
+</head>
+<body>
+
+<table border="1">
+    <!--行-->
+    <tr>
+        <th>迟到时间</th>
+        <th>签到时间</th>
+        <th>签退时间</th>
+        <th>工资</th>
+    </tr>
+
+    <tr th:each="salary,recordStats : ${salaryRecord}" >
+        <td th:text="${salary.date}"></td>
+        <td th:text="${salary.signInStamp}"></td>
+        <th th:text="${salary.signOutStamp}"></th>
+        <th th:text="${salary.final}"></th>
+    </tr>
+</table>
+</body>
+</html>

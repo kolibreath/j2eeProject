@@ -2,9 +2,14 @@ package com.kolibreath.j2eefinal;
 
 import com.kolibreath.j2eefinal.entity.Department;
 import com.kolibreath.j2eefinal.entity.PunchCard;
+import com.kolibreath.j2eefinal.entity.Staff;
+import com.kolibreath.j2eefinal.repo.DepartmentRepo;
+import com.kolibreath.j2eefinal.repo.PunchCardRepo;
+import com.kolibreath.j2eefinal.repo.StaffRepo;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Random;
 
 public class CalUtils {
@@ -105,6 +110,34 @@ public class CalUtils {
 
 
     //计算员工月工资
+    public  static void collectionPunchCard(StaffRepo staffRepo, PunchCardRepo punchCardRepo, DepartmentRepo departmentRepo){
+        List<Staff> staff = staffRepo.findAll();
+//        String currentTime = new SimpleDateFormat("yyyy-MM-dd").format(new Date(System.currentTimeMillis()));
+        //给所有员工添加打卡情况
+        //考虑没有签到的员工
+        for(Staff s : staff){
+//            PunchCard punchCard = punchCardRepo.findByDateAndStaffId(currentTime,s.getStaffId());
+            List<PunchCard> punchCard = punchCardRepo.findByStaffId(s.getStaffId());
+//            if(punchCard == null){
+//                PunchCard pc = new PunchCard();
+//                pc.setStaffId(s.getStaffId());
+//                pc.setSignInStamp(0);
+//                pc.setSignOutStamp(0);
+//                pc.setDate(currentTime);
+//                pc.setStatus(Common.ABSENSE);
+//
+//                punchCardRepo.save(pc);
 
+//            }else{
+//                PunchCard pc = punchCard;
+               for(PunchCard card: punchCard) {
+//                   pc.setStatus(CalUtils.punchCardStatus(departmentRepo.findById(s.getDepartmentId()).get(), pc));
+//                   punchCardRepo.save(pc);
+                   card.setStatus(CalUtils.punchCardStatus(departmentRepo.findById(s.getDepartmentId()).get(), card));
+                   punchCardRepo.save(card);
+//            }
+               }
+        }
+    }
     //
 }

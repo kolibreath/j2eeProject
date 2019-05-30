@@ -36,14 +36,14 @@ public class PunchController {
     public ModelAndView showRecords(){
         int staffId = Common.currentStaffId;
         List<PunchCard> punchCards = punchCardRepo.findByStaffId(staffId);
-        punchCards = punchCards.subList(punchCards.size() - 3,punchCards.size());
+//        punchCards = punchCards.subList(punchCards.size() - 3,punchCards.size());
 
         List<Record> records = new LinkedList<>();
 
         Staff staff = staffRepo.findByStaffId(staffId);
         String staffName = staff.getName();
 
-        for(int i = 0;i<3;i++){
+        for(int i = 0;i< punchCards.size();i++){
             records.add(new Record(staffName,punchCards.get(i).getSignInStamp(),punchCards.get(i).getSignOutStamp()
             ,punchCards.get(i).getStatus(),punchCards.get(i).getPunchCardId(),staffId));
         }

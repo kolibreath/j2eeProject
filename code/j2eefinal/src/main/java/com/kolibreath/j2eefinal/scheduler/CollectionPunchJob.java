@@ -38,27 +38,6 @@ public class CollectionPunchJob implements Job {
     @Override
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
         System.out.println("开始统计打卡信息" );
-        List<Staff> staff = staffRepo.findAll();
-        String currentTime = new SimpleDateFormat("yyyy-MM-dd").format(new Date(System.currentTimeMillis()));
-        //给所有员工添加打卡情况
-        //考虑没有签到的员工
-       for(Staff s : staff){
-           PunchCard punchCard = punchCardRepo.findByDateAndStaffId(currentTime,s.getStaffId());
-           if(punchCard == null){
-               PunchCard pc = new PunchCard();
-               pc.setStaffId(s.getStaffId());
-               pc.setSignInStamp(0);
-               pc.setSignOutStamp(0);
-               pc.setDate(currentTime);
-               pc.setStatus(Common.ABSENSE);
-
-               punchCardRepo.save(pc);
-           }else{
-               PunchCard pc = punchCard;
-               pc.setStatus(CalUtils.punchCardStatus(departmentRepo.findById(s.getDepartmentId()).get(),pc));
-               punchCardRepo.save(pc);
-           }
-       }
     }
 
 
