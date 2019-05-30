@@ -66,7 +66,7 @@ public class CalUtils {
     }
 
 
-    //返回状态
+    //返回状态 String
     public static String getStatus(int status){
 //        public static final int ON_TIME = 0;
 //        public static final int ARRIVE_LATE =1 ;
@@ -83,6 +83,27 @@ public class CalUtils {
             default: return "准点";
         }
     }
+
+
+    //返回状态 int
+    public static int getStatus(String status){
+//        public static final int ON_TIME = 0;
+//        public static final int ARRIVE_LATE =1 ;
+//        public static final int LEAVE_EARLY =2 ;
+//        public static final int WORK_LATE =3 ;
+//        public static final int BUSINESS_TRIP =4 ;
+
+        switch (status){
+            case "准点" : return 0;
+            case "迟到": return 1;
+            case "早退" : return 2;
+            case "加班" : return 3;
+            case "出差": return 4;
+            default: return 0;
+        }
+    }
+
+
     //计算员工月工资
 
     //

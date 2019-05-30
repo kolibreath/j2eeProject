@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface PunchCardRepo extends JpaRepository<PunchCard,Long> {
+public interface PunchCardRepo extends JpaRepository<PunchCard,Integer> {
 
     //根据今天的日期和员工的ID进行查找记录
     PunchCard findByDateAndStaffId(String date, int staffId);

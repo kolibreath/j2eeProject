@@ -136,27 +136,6 @@ public class J2eefinalApplication {
 
 
 	public static void main(String[] args) {
-
-		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
-		try {
-			long time = format.parse("2019-05-25-06-30-00").getTime();
-			System.out.println(time);
-			time = format.parse("2019-05-25-16-30-00").getTime();
-
-			System.out.println(time);
-			time = format.parse("2019-05-26-07-59-00").getTime();
-			System.out.println(time);
-			time = format.parse("2019-05-26-18-30-00").getTime();
-
-			System.out.println(time);
-			time = format.parse("2019-05-27-06-30-00").getTime();
-			System.out.println(time);
-			time = format.parse("2019-05-27-19-30-00").getTime();
-			System.out.println(time);
-
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
 		SpringApplication.run(J2eefinalApplication.class, args);
 
 	}

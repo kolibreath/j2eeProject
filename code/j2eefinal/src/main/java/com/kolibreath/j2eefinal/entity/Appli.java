@@ -5,11 +5,11 @@ import javax.persistence.*;
 //员工向经理申请类
 @Entity
 @Table(name = "application")
-public class  Application {
+public class Appli {
 
     @Id
     @GeneratedValue
-    private int applicationId;
+    private long appliId;
 
     @Column
     private int applicantId;
@@ -24,6 +24,21 @@ public class  Application {
     @Column
     private String reason;
 
+    @Column
+    private boolean handled;
+
+
+    public boolean getHandled(){
+        return handled;
+    }
+    public boolean isHandled() {
+        return handled;
+    }
+
+    public void setHandled(boolean handled) {
+        this.handled = handled;
+    }
+
     public String getReason() {
         return reason;
     }
@@ -32,12 +47,12 @@ public class  Application {
         this.reason = reason;
     }
 
-    public int getApplicationId() {
-        return applicationId;
+    public long getAppliId() {
+        return appliId;
     }
 
-    public void setApplicationId(int applicationId) {
-        this.applicationId = applicationId;
+    public void setAppliId(int appliId) {
+        this.appliId = appliId;
     }
 
     public int getApplicantId() {

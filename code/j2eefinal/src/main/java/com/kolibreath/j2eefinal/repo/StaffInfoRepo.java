@@ -9,4 +9,5 @@ public interface StaffInfoRepo extends JpaRepository<StaffInfo,Long> {
 
 
     List<StaffInfo> findByUsernameAndPassword(String username, String password);
+
 }

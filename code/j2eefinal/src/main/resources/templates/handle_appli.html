@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>处理请求</title>
+</head>
+<body>
+<!--动态渲染内容-->
+<table border="1">
+    <!--行-->
+    <tr>
+        <th>申请表Id</th>
+        <th>需要修改的记录Id</th>
+        <th>员工姓名</th>
+        <th>理由</th>
+    </tr>
+
+    <tr th:each="appli,appliStats : ${applis}" >
+        <td th:text="${appli.appliId}"></td>
+        <th th:text="${appli.recordId}"></th>
+        <td th:text="${appli.applicantId}"></td>
+        <th th:text="${appli.reason}"></th>
+    </tr>
+</table>
+
+<form action="/handle_appli" accept-charset="utf-8" method="post">
+    <div>
+        <label>需要修改成的状态
+        </label>
+        <input type="text" class="text" id="intended_status" placeholder="需要修改成的状态" name="intended_status" required tabindex="1">
+    </div>
+
+    <div>
+        <label>打卡记录Id</label><input type="text" class="text" id="punch_card_record_id" placeholder="打卡记录Id"
+                                    required name="punch_card_record_id" tabindex="2"><br>
+    </div>
+
+    <div>
+        <label>申请表Id</label><input type="text" class="text" id="application_id" placeholder="申请表Id"
+                                    required name="application_id" tabindex="2"><br>
+    </div>
+    <br>
+    <div>
+        <button type="submit" value="确认" id="confirm">确认修改</button>
+    </div>
+</form>
+
+</body>
+</html>
