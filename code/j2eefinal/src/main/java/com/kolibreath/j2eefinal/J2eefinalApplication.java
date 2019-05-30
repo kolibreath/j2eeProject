@@ -50,7 +50,7 @@ public class J2eefinalApplication {
 				.withSchedule(
 						DailyTimeIntervalScheduleBuilder
 								.dailyTimeIntervalSchedule()
-								.startingDailyAt(TimeOfDay.hourAndMinuteOfDay(14,32))
+								.startingDailyAt(TimeOfDay.hourAndMinuteOfDay(14,42))
 								.withInterval(24, DateBuilder.IntervalUnit.HOUR)
 				).build();
 
@@ -61,7 +61,7 @@ public class J2eefinalApplication {
 
 		DailyTimeIntervalTrigger stopTrigger = TriggerBuilder
 				.newTrigger()
-				.withIdentity("stopTrigger", "group1")
+				.withIdentity("stopTrigger", "group")
 				.withSchedule(
 						DailyTimeIntervalScheduleBuilder
 								.dailyTimeIntervalSchedule()
@@ -75,7 +75,7 @@ public class J2eefinalApplication {
 
 		DailyTimeIntervalTrigger collectionTrigger = TriggerBuilder
 				.newTrigger()
-				.withIdentity("collectionTrigger", "group2")
+				.withIdentity("collectionTrigger", "group")
 				.withSchedule(
 						DailyTimeIntervalScheduleBuilder
 								.dailyTimeIntervalSchedule()
@@ -169,7 +169,7 @@ public class J2eefinalApplication {
 	@RequestMapping("/index")
 	public String index(){
 		startJobs();
-		initData();
+//		initData();
 //		initData2();
 		return "index";
 	}
