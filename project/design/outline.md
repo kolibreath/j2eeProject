@@ -4,7 +4,7 @@
 - [概要设计 样例1](https://wenku.baidu.com/view/9fabd435a32d7375a4178088.html)
 - [概要设计 样例2](https://wenku.baidu.com/view/2a4abb42336c1eb91a375d3c.html)
 - [模块描述](http://www.hur.cn/Article/doc/155.html)
-
+- [排版规范](http://www.voidcn.com/article/p-tcncscmm-pu.html)
 ## 任务安排
 按照上面的两个例子 完成概要设计文档，部分内容可以直接从之前写的数据流图，E-R图，和一些文字性的简介直接照抄过来。
 <br>
