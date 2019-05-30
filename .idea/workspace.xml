@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0a8e958-fd17-425f-aac8-b9cc2c7851ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/handle_appli.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/CalUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/CalUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/j2eefinal/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/Common.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/J2eefinalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/J2eefinalApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/ApplicationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/Appli.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/model/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/model/IStaff.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/ApplicationRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/ApplicationRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/PunchCardRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/PunchCardRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/StaffInfoRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/StaffInfoRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/CollectionPunchJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/CollectionPunchJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/error.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/function.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/function.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/code/j2eefinal/target/" />
@@ -44,19 +41,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/show_record.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="39" lean-forward="true" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/ApplicationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="75" column="55" lean-forward="true" selection-start-line="75" selection-start-column="55" selection-end-line="75" selection-end-column="55" />
+            <state relative-caret-position="304">
+              <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2553#2554#0" expanded="true" />
@@ -85,43 +73,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/PunchCardRepo.java">
+        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/AuthController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+            <state relative-caret-position="660">
+              <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1082#1083#0" expanded="true" />
+                <element signature="e#1112#1113#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/jdbc/exceptions/SQLError.class">
+        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="85" column="21" lean-forward="true" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/J2eefinalApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="137" column="44" selection-start-line="137" selection-start-column="44" selection-end-line="137" selection-end-column="44" />
+            <state relative-caret-position="171">
+              <caret line="91" column="91" selection-start-line="91" selection-start-column="91" selection-end-line="91" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#5693#5694#0" expanded="true" />
+                <element signature="e#5717#5718#0" expanded="true" />
+                <element signature="e#5753#5754#0" expanded="true" />
+                <element signature="e#5834#5835#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/ApplicationRepo.java">
+        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/StartPunchJob.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,45 +124,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/PunchCard.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.19/tomcat-embed-core-9.0.19.jar!/org/apache/tomcat/util/threads/TaskThread.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-              <folding>
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#508#509#0" expanded="true" />
-                <element signature="e#554#555#0" expanded="true" />
-                <element signature="e#590#591#0" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#676#677#0" expanded="true" />
-                <element signature="e#722#723#0" expanded="true" />
-                <element signature="e#759#760#0" expanded="true" />
-                <element signature="e#794#795#0" expanded="true" />
-                <element signature="e#848#849#0" expanded="true" />
-                <element signature="e#896#897#0" expanded="true" />
-                <element signature="e#927#928#0" expanded="true" />
-                <element signature="e#954#955#0" expanded="true" />
-                <element signature="e#994#995#0" expanded="true" />
-                <element signature="e#1026#1027#0" expanded="true" />
-                <element signature="e#1057#1058#0" expanded="true" />
-                <element signature="e#1087#1088#0" expanded="true" />
-                <element signature="e#1130#1131#0" expanded="true" />
-                <element signature="e#1168#1169#0" expanded="true" />
-                <element signature="e#1198#1199#0" expanded="true" />
-                <element signature="e#1227#1228#0" expanded="true" />
-                <element signature="e#1268#1269#0" expanded="true" />
-                <element signature="e#1304#1305#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/handle_appli.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
+            <state relative-caret-position="204">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -176,24 +135,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/function.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="240">
+              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/Appli.java">
+        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/CollectionPunchJob.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="335">
+              <caret line="40" column="48" lean-forward="true" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
               <folding>
-                <element signature="e#464#465#0" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#459#460#0" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#536#537#0" expanded="true" />
-                <element signature="e#574#575#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/StarSchedualer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/GetSchedual.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -216,6 +194,7 @@
       <find>success</find>
       <find>register</find>
       <find>login</find>
+      <find>index</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -232,13 +211,11 @@
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/PunchCardRepository.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/model/Employee.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/model/IStaff.java" />
-        <option value="$PROJECT_DIR$/code/j2eefinal/pom.xml" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/GetSchedual.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/StarSchedualer.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/StartPunchJob.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/StopPunchJob.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/PunchCard.java" />
-        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/CollectionPunchJob.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/StaffInfo.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/resources/static/success.html" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/Department.java" />
@@ -246,13 +223,10 @@
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/resources/static/login.html" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/resources/static/register.html" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/DepartmentRepo.java" />
-        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/Common.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/Staff.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/AuthController.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/PunchController.java" />
-        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/AuthController.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/register.html" />
-        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/error.html" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/StaffRepo.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/ApplicationnController.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/PunchController.java" />
@@ -261,14 +235,19 @@
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/handle_application.html" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/StaffInfoRepo.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/CalUtils.java" />
-        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/function.html" />
-        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/J2eefinalApplication.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/Application.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/handle_appli.html" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/ApplicationRepo.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/Appli.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/PunchCardRepo.java" />
+        <option value="$PROJECT_DIR$/code/j2eefinal/pom.xml" />
+        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/AuthController.java" />
+        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/Common.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/ApplicationController.java" />
+        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/error.html" />
+        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/function.html" />
+        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/CollectionPunchJob.java" />
+        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/J2eefinalApplication.java" />
       </list>
     </option>
   </component>
@@ -398,6 +377,17 @@
               <item name="j2eefinal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="j2eefinal" type="462c0819:PsiDirectoryNode" />
+              <item name="scheduler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="j2ee-final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="j2ee-final" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="j2eefinal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -409,23 +399,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="j2ee-final" type="b2602c69:ProjectViewProjectNode" />
-              <item name="j2ee-final" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="j2eefinal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="j2ee-final" type="b2602c69:ProjectViewProjectNode" />
-              <item name="j2ee-final" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="j2eefinal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -442,7 +415,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559184410497" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559197970855" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -531,7 +504,7 @@
       <workItem from="1559024833502" duration="1614000" />
       <workItem from="1559121961616" duration="234000" />
       <workItem from="1559126187285" duration="111000" />
-      <workItem from="1559176767208" duration="4514000" />
+      <workItem from="1559176767208" duration="9714000" />
     </task>
     <servers />
   </component>
@@ -553,7 +526,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44942000" />
+    <option name="totallyTimeSpent" value="50142000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -568,7 +541,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22103004" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22031474" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" weight="0.3297568" />
@@ -579,13 +552,13 @@
       <window_info id="Image Layers" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.48915663" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.43493977" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.5626506" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.43493977" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007153" side_tool="true" weight="0.5626506" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Version Control" order="11" />
@@ -594,14 +567,14 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.3297568" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.021459227" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.27753934" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
-      <window_info anchor="right" id="Terminal" order="10" visible="true" weight="0.2553648" />
+      <window_info anchor="right" id="Terminal" order="10" weight="0.5350501" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -615,6 +588,12 @@
           <line>49</line>
           <properties />
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/J2eefinalApplication.java</url>
+          <line>125</line>
+          <properties />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -661,69 +640,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/Record.java" />
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/GetSchedual.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/StarSchedualer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/StartPunchJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/StopPunchJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/CollectionPunchJob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-151">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/2.2.1/quartz-2.2.1.jar!/org/quartz/Scheduler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="625">
@@ -753,13 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -810,20 +719,6 @@
     <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/error.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/Common.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="8" column="46" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="8" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.19/tomcat-embed-core-9.0.19.jar!/org/apache/catalina/connector/RequestFacade.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -849,18 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
           <caret line="470" column="19" selection-start-line="470" selection-start-column="19" selection-end-line="470" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/AuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1082#1083#0" expanded="true" />
-            <element signature="e#1112#1113#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -892,13 +775,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/Staff.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -938,16 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/PunchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="47" column="85" selection-start-line="47" selection-start-column="85" selection-end-line="47" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/StaffInfoRepo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -975,30 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/J2eefinalApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="137" column="44" selection-start-line="137" selection-start-column="44" selection-end-line="137" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/show_record.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="39" lean-forward="true" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/function.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/handle_appli.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="619">
@@ -1009,7 +851,7 @@
     <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/jdbc/exceptions/SQLError.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="85" column="21" lean-forward="true" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+          <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1026,7 +868,7 @@
     <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/Appli.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
           <folding>
             <element signature="e#464#465#0" expanded="true" />
             <element signature="e#484#485#0" expanded="true" />
@@ -1041,7 +883,7 @@
     <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/PunchCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
           <folding>
             <element signature="e#423#424#0" expanded="true" />
             <element signature="e#457#458#0" expanded="true" />
@@ -1081,10 +923,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/show_record.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/Staff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/StopPunchJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/Common.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/PunchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="47" column="85" selection-start-line="47" selection-start-column="85" selection-end-line="47" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/ApplicationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="75" column="55" lean-forward="true" selection-start-line="75" selection-start-column="55" selection-end-line="75" selection-end-column="55" />
+        <state relative-caret-position="304">
+          <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2553#2554#0" expanded="true" />
@@ -1107,6 +1023,74 @@
             <element signature="e#3330#3331#0" expanded="true" />
             <element signature="e#3379#3380#0" expanded="true" />
             <element signature="e#3427#3428#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/function.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.19/tomcat-embed-core-9.0.19.jar!/org/apache/tomcat/util/threads/TaskThread.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/StartPunchJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/CollectionPunchJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="40" column="48" lean-forward="true" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/GetSchedual.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/scheduler/StarSchedualer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/J2eefinalApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="91" column="91" selection-start-line="91" selection-start-column="91" selection-end-line="91" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5693#5694#0" expanded="true" />
+            <element signature="e#5717#5718#0" expanded="true" />
+            <element signature="e#5753#5754#0" expanded="true" />
+            <element signature="e#5834#5835#0" expanded="true" />
           </folding>
         </state>
       </provider>

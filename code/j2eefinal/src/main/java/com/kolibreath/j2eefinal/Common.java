@@ -17,4 +17,7 @@ public class Common {
 
     public static int currentStaffId = 0;
 
+    public static int currentStaffType = 0;
+
+
 }

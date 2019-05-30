@@ -22,6 +22,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Random;
 
 
 @Controller
@@ -49,7 +50,7 @@ public class J2eefinalApplication {
 				.withSchedule(
 						DailyTimeIntervalScheduleBuilder
 								.dailyTimeIntervalSchedule()
-								.startingDailyAt(TimeOfDay.hourAndMinuteOfDay(8,0))
+								.startingDailyAt(TimeOfDay.hourAndMinuteOfDay(14,32))
 								.withInterval(24, DateBuilder.IntervalUnit.HOUR)
 				).build();
 
@@ -60,7 +61,7 @@ public class J2eefinalApplication {
 
 		DailyTimeIntervalTrigger stopTrigger = TriggerBuilder
 				.newTrigger()
-				.withIdentity("stopTrigger", "group")
+				.withIdentity("stopTrigger", "group1")
 				.withSchedule(
 						DailyTimeIntervalScheduleBuilder
 								.dailyTimeIntervalSchedule()
@@ -74,11 +75,11 @@ public class J2eefinalApplication {
 
 		DailyTimeIntervalTrigger collectionTrigger = TriggerBuilder
 				.newTrigger()
-				.withIdentity("collectionTrigger", "group")
+				.withIdentity("collectionTrigger", "group2")
 				.withSchedule(
 						DailyTimeIntervalScheduleBuilder
 								.dailyTimeIntervalSchedule()
-								.startingDailyAt(TimeOfDay.hourAndMinuteOfDay(22,0))
+								.startingDailyAt(TimeOfDay.hourAndMinuteOfDay(14,21))
 								.withInterval(24, DateBuilder.IntervalUnit.HOUR))
 				.build();
 
@@ -88,7 +89,7 @@ public class J2eefinalApplication {
 			if(!GetSchedual.getScheduler().checkExists(stopTrigger.getKey()))
 				GetSchedual.getScheduler().scheduleJob(stopPunchDetail,stopTrigger);
 			if(!GetSchedual.getScheduler().checkExists(collectionTrigger.getKey()))
-				GetSchedual.getScheduler().scheduleJob(collectPunchDetail,stopTrigger);
+				GetSchedual.getScheduler().scheduleJob(collectPunchDetail,collectionTrigger);
 
 		} catch (SchedulerException e) {
 			e.printStackTrace();
@@ -111,7 +112,8 @@ public class J2eefinalApplication {
 		department1.setSignoutStartTime(6);
 		departmentRepo.save(department1);
 
-		Department department2 = new Department();
+		new Department();
+		Department department2;
 		department2 = new Department();
 		department2.setDepartmentName("主管部门");
 		department2.setSiginStartTime(9);
@@ -119,10 +121,56 @@ public class J2eefinalApplication {
 		departmentRepo.save(department2);
 	}
 
+	private void initData2() {
+		//生成打卡记录
+		String date = "2019-04-";
+		for (int i = 10; i <= 30; i++) {
+			String signIn = "";
+			String signOut = "";
+			String curDate = date;
+
+			int signInHour = 0;
+			int signOutHour = 0;
+			String day = "";
+			if (i / 10 == 0) {
+				day = "0" + i;
+				signInHour = (int) (new Random().nextDouble() * 10 % 5 + 7);
+				signOutHour = (int) (new Random().nextDouble() * 10 % 6 + 12);
+			} else
+				day = String.valueOf(i);
+
+			curDate = curDate + day;
+			//签到时间 hour
+			String signInAppend = signInHour / 10 == 0 ? "0" + signInHour : signInHour + "";
+			String signOutAppend = signOutHour / 10 == 0 ? "0" + signOutHour : signOutHour + "";
+
+			signIn = date + day + "-" + signInAppend + "-" + randomSixty() + "-" + randomSixty();
+			signOut = date + day + "-" + signOutAppend + "-" + randomSixty() + "-" + randomSixty();
+			SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+			long sigintime = 0;
+			long signouttime = 0;
+			try {
+				sigintime = simpleDateFormat.parse(signIn).getTime();
+				signouttime = simpleDateFormat.parse(signOut).getTime();
+			} catch (ParseException e) {
+				e.printStackTrace();
+				continue;
+			}
+			PunchCard card = new PunchCard();
+			card.setSignInStamp(sigintime);
+			card.setSignOutStamp(signouttime);
+			card.setStaffId(14);
+			card.setDate(curDate);
+
+			punchCardRepo.save(card);
+		}
+	}
+
 	@RequestMapping("/index")
 	public String index(){
 		startJobs();
 		initData();
+//		initData2();
 		return "index";
 	}
 
@@ -134,11 +182,14 @@ public class J2eefinalApplication {
 	}
 
 
-
-	public static void main(String[] args) {
-		SpringApplication.run(J2eefinalApplication.class, args);
-
+	public static int randomSixty(){
+		return Math.abs(new Random().nextInt()*100 +new Random().nextInt()*10) %60;
 	}
+
+	public static void main(String[] args) throws ParseException {
+
+		SpringApplication.run(J2eefinalApplication.class, args);
+		}
 
 }
 

@@ -49,8 +49,11 @@ public class AuthController {
     public String login(HttpServletRequest request){
         String username = request.getParameter("username");
         String password = request.getParameter("password");
+
         int curStaff= staffInfoRepo.findByUsernameAndPassword(username,password).get(0).getId();
+        int staffType = staffRepo.findByStaffId(curStaff).getStaffType();
         Common.currentStaffId = curStaff;
+        Common.currentStaffType = staffType;
         return "function";
     }
 

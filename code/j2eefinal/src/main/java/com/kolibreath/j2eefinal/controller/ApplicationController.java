@@ -53,6 +53,11 @@ public class ApplicationController {
         List<Appli> applicationList;
         applicationList  = applicationRepo.findByHandled(false);
 
+        if(Common.currentStaffType == Common.EMPLOYEE) {
+            ModelAndView modelAndView = new ModelAndView();
+            modelAndView.setViewName("/error");
+            return modelAndView;
+        }
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("/handle_appli");
         modelAndView.addObject("applis",applicationList);

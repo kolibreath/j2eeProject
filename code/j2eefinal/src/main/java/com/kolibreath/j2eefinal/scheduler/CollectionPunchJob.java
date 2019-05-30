@@ -37,6 +37,7 @@ public class CollectionPunchJob implements Job {
     //给员工添加迟到 早退 正常上班等等标记
     @Override
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
+        System.out.println("开始统计打卡信息" );
         List<Staff> staff = staffRepo.findAll();
         String currentTime = new SimpleDateFormat("yyyy-MM-dd").format(new Date(System.currentTimeMillis()));
         //给所有员工添加打卡情况

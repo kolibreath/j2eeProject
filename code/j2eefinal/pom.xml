@@ -63,6 +63,14 @@
 		</dependency>
 
 
+		<!-- https://mvnrepository.com/artifact/me.liuwj.ktorm/ktorm-core -->
+		<dependency>
+			<groupId>me.liuwj.ktorm</groupId>
+			<artifactId>ktorm-core</artifactId>
+			<version>2.2</version>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>
