@@ -6,6 +6,7 @@ import com.kolibreath.j2eefinal.Common;
 import com.kolibreath.j2eefinal.entity.Department;
 import com.kolibreath.j2eefinal.entity.Staff;
 import com.kolibreath.j2eefinal.entity.StaffInfo;
+import com.kolibreath.j2eefinal.entity.User;
 import com.kolibreath.j2eefinal.repo.DepartmentRepo;
 import com.kolibreath.j2eefinal.repo.PunchCardRepo;
 import com.kolibreath.j2eefinal.repo.StaffInfoRepo;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
@@ -46,7 +48,7 @@ public class AuthController {
     }
 
     @RequestMapping("/dologin")
-    public String login(HttpServletRequest request){
+    public String login(HttpServletRequest request, HttpSession httpSession){
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
@@ -54,6 +56,9 @@ public class AuthController {
         int staffType = staffRepo.findByStaffId(curStaff).getStaffType();
         Common.currentStaffId = curStaff;
         Common.currentStaffType = staffType;
+
+        User  user = new User(username,curStaff,staffType);
+        httpSession.setAttribute(Common.USER_INFO,user);
         return "function";
     }
 

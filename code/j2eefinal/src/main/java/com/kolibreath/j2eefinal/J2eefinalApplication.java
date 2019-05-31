@@ -14,6 +14,7 @@ import org.quartz.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,6 +28,7 @@ import java.util.Random;
 
 @Controller
 @SpringBootApplication
+@ServletComponentScan("com.kolibreath.j2eefinal.filter")
 @ComponentScan (basePackages = {"com.kolibreath.j2eefinal.repo","com.kolibreath.j2eefinal.controller"})
 public class J2eefinalApplication {
 

@@ -98,3 +98,7 @@ public class Staff {
 
 ## Spring 传递数据给html
 [传递数据](https://blog.csdn.net/weixin_36380516/article/details/78668199)
+
+
+## Spring 使用Session 保存和传输用户数据
+[session](https://blog.csdn.net/linuu/article/details/51037943)

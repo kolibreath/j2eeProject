@@ -19,5 +19,7 @@ public class Common {
 
     public static int currentStaffType = 0;
 
+    public static final String USER_INFO = "USER_INFO";
+
 
 }
