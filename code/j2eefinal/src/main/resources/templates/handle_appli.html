@@ -2,6 +2,8 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+    </script>
     <meta charset="UTF-8">
     <title>处理请求</title>
 </head>
@@ -14,6 +16,7 @@
         <th>需要修改的记录Id</th>
         <th>员工姓名</th>
         <th>理由</th>
+        <th>处理申请</th>>
     </tr>
 
     <tr th:each="appli,appliStats : ${applis}" >
@@ -21,30 +24,30 @@
         <th th:text="${appli.recordId}"></th>
         <td th:text="${appli.applicantId}"></td>
         <th th:text="${appli.reason}"></th>
+        <td><button type="button"  th:onclick="|check('${appli.appliId}','${appli.recordId}')|">修改记录</button></td>
     </tr>
+    <script>
+        function check(appliId, recordId) {
+            let input=prompt("输入理由");
+            //be careful, whatever user input, javascript will treat it as a
+            //"string", if you need a number, you need to use "parseInt()"
+            //method to change String to Number. like the following:
+            //var b=parseInt(input) +1;
+            //alert(b);
+            $.ajax({
+                type: "POST",
+                data: {intended_status: input, punch_card_record_id: parseInt(recordId), application_id:parseInt(appliId)},
+                url: "http://localhost:8080/right/handle_appli",
+                success: function (data) {
+                    alert("发送成功")
+                },
+                error: function (data) {
+                    alert("认证失败");
+                }
+            });
+        }
+    </script>
 </table>
-
-<form action="/right/handle_appli" accept-charset="utf-8" method="post">
-    <div>
-        <label>需要修改成的状态
-        </label>
-        <input type="text" class="text" id="intended_status" placeholder="需要修改成的状态" name="intended_status" required tabindex="1">
-    </div>
-
-    <div>
-        <label>打卡记录Id</label><input type="text" class="text" id="punch_card_record_id" placeholder="打卡记录Id"
-                                    required name="punch_card_record_id" tabindex="2"><br>
-    </div>
-
-    <div>
-        <label>申请表Id</label><input type="text" class="text" id="application_id" placeholder="申请表Id"
-                                    required name="application_id" tabindex="2"><br>
-    </div>
-    <br>
-    <div>
-        <button type="submit" value="确认" id="confirm">确认修改</button>
-    </div>
-</form>
 
 </body>
 </html>

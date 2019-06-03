@@ -32,6 +32,7 @@
         <td><button type="button"  th:onclick="'javascript:check(\''+${record.recordId}+'\')'">edit</button></td>
     </tr>
     <script>
+        //记得倒入jquery
         function check(id) {
             let input=prompt("输入理由");
         //be careful, whatever user input, javascript will treat it as a
@@ -42,7 +43,7 @@
             $.ajax({
                 type: "POST",
                 data: {recordId: parseInt(id), reason: input},
-                url: "localhost:8080/application",
+                url: "http://localhost:8080/application",
                 success: function (data) {
                    alert("发送成功")
                 },
@@ -53,22 +54,6 @@
         }
     </script>
 </table>
-
-<form action="/application" accept-charset="utf-8" method="post">
-    <div>
-        <label>记录Id
-        </label>
-        <input type="text" class="text" id="recordId" placeholder="记录Id" name="recordId" required tabindex="1">
-    </div>
-
-    <div>
-        <label>理由</label><input type="text" class="text" id="reason" placeholder="申请理由" required name="reason" tabindex="2"><br>
-    </div>
-    <br>
-    <div>
-        <button type="submit" value="确认" id="confirm">确认申请</button>
-    </div>
-</form>
 
 </body>
 </html>
