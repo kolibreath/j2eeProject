@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
+<!--https://blog.csdn.net/gongzhao426177/article/details/73550155-->
 <head>
     <meta charset="UTF-8">
     <title>展示前三天签到情况</title>
@@ -15,6 +16,7 @@
         <th>签退时间</th>
         <th>签到状态</th>
         <th>record Id</th>
+        <th>提出申请</th>
     </tr>
 
     <tr th:each="record,recordStats : ${records}" >
@@ -23,7 +25,35 @@
         <th th:text="${record.signOutTime}"></th>
         <th th:text="${record.status}"></th>
         <th th:text="${record.recordId}"></th>
+        <!--如果是数字可以直接加上引号-->
+        <!--如果是字符串需要转义-->
+        <td><button type="button"  th:onclick="'javascript:check(\''+${record.recordId}+'\')'">edit</button></td>
     </tr>
+    <script>
+        function check(id) {
+            let input=prompt("输入理由");
+        //be careful, whatever user input, javascript will treat it as a
+        //"string", if you need a number, you need to use "parseInt()"
+        //method to change String to Number. like the following:
+        //var b=parseInt(input) +1;
+        //alert(b);
+            $.ajax({
+                type: "POST",
+                data: {recordId: parseInt(id), reason: input},
+                url: "localhost:8080/application",
+                success: function (data) {
+                    if (data == "认证成功") {
+                        window.location.href = ("/admin/corp/list");
+                    } else {
+                        alert("认证失败");
+                    }
+                },
+                error: function (data) {
+                    alert("认证失败");
+                }
+            });
+        }
+    </script>
 </table>
 
 <form action="/application" accept-charset="utf-8" method="post">
