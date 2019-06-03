@@ -3,6 +3,8 @@
 
 <!--https://blog.csdn.net/gongzhao426177/article/details/73550155-->
 <head>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+    </script>
     <meta charset="UTF-8">
     <title>展示前三天签到情况</title>
 </head>
@@ -42,11 +44,7 @@
                 data: {recordId: parseInt(id), reason: input},
                 url: "localhost:8080/application",
                 success: function (data) {
-                    if (data == "认证成功") {
-                        window.location.href = ("/admin/corp/list");
-                    } else {
-                        alert("认证失败");
-                    }
+                   alert("发送成功")
                 },
                 error: function (data) {
                     alert("认证失败");
