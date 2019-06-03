@@ -42,48 +42,34 @@ public class J2eefinalApplication {
 	@Autowired
 	PunchCardRepo punchCardRepo;
 
+	private CronTrigger buildCronTrigger(String name,String group, String expression){
+		CronTrigger startTrigger = TriggerBuilder
+				.newTrigger()
+				.withIdentity(name, group)
+				.withSchedule(CronScheduleBuilder.cronSchedule(expression)).build();
+		return startTrigger;
+	}
+
+
 	private void startJobs(){
 		JobDetail startPunchDetail  = JobBuilder.newJob(StartPunchJob.class)
 				.withDescription("开始签到")
 				.build();
-		DailyTimeIntervalTrigger startTrigger = TriggerBuilder
-				.newTrigger()
-				.withIdentity("startTrigger", "group")
-				.withSchedule(
-						DailyTimeIntervalScheduleBuilder
-								.dailyTimeIntervalSchedule()
-								.startingDailyAt(TimeOfDay.hourAndMinuteOfDay(14,42))
-								.withInterval(24, DateBuilder.IntervalUnit.HOUR)
-				).build();
+
+		CronTrigger startTrigger = buildCronTrigger("startTrigger","group","\"0 7 0 ? * MON-FRI\"");
 
 
 		JobDetail stopPunchDetail = JobBuilder.newJob(StopPunchJob.class)
 				.withDescription("停止签到")
 				.build();
 
-		DailyTimeIntervalTrigger stopTrigger = TriggerBuilder
-				.newTrigger()
-				.withIdentity("stopTrigger", "group")
-				.withSchedule(
-						DailyTimeIntervalScheduleBuilder
-								.dailyTimeIntervalSchedule()
-								.startingDailyAt(TimeOfDay.hourAndMinuteOfDay(22,0))
-								.withInterval(24, DateBuilder.IntervalUnit.HOUR))
-				.build();
+		CronTrigger stopTrigger = buildCronTrigger("stopTrigger","group1","\"0 19 00 ? * MON-FRI\"");
 
 		JobDetail collectPunchDetail = JobBuilder.newJob(CollectionPunchJob.class)
 				.withDescription("开始收集签到情况")
 				.build();
 
-		DailyTimeIntervalTrigger collectionTrigger = TriggerBuilder
-				.newTrigger()
-				.withIdentity("collectionTrigger", "group")
-				.withSchedule(
-						DailyTimeIntervalScheduleBuilder
-								.dailyTimeIntervalSchedule()
-								.startingDailyAt(TimeOfDay.hourAndMinuteOfDay(14,21))
-								.withInterval(24, DateBuilder.IntervalUnit.HOUR))
-				.build();
+	     CronTrigger collectionTrigger = buildCronTrigger("collectTrigger","group2","\"0 0 0 ? * MON-FRI\"");
 
 		try {
 			if(!GetSchedual.getScheduler().checkExists(startTrigger.getKey()))

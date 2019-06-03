@@ -1,3 +1,24 @@
+## 项目结构Spring boot
+- Spring boot
+默认集成Hibernate 内置tomcat等工具，基于注解配置，基于注解配置就是运行慢
+- 数据库实现：
+两种数据库框架：Ktorm/JPA<br>
+Ktorm使用Kotlin 基于JDBC，可以用类似于SQL 的DSL语言操作，JPA是一种默认实现了对于表属性的增删查改操作的一种库
+- 没有使用jsp 使用的是 thymeleaf引擎 渲染
+- 定时工具Quartz
+
+## 项目实现
+- 一些表类
+- 控制器类
+- httpSession 存储用户信息
+- ModelAndView 消息
+- 直接使用表单post请求 尝试过ajax 但是发现ModelAndView更好用就没写了
+
+### 打卡
+- 各个部门打卡时间不同
+- 早上7点开放打卡 ， 晚上6点开始打卡 12点统计员工工作情况
+
+
 # 项目架构
 - [Quartz 定时任务框架](https://juejin.im/post/5ab77f5d6fb9a028e52dccc3)
 这篇文章也说到了在Sprig-boot 中整合Quartz

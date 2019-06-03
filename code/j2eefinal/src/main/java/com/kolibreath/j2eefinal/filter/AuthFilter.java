@@ -19,7 +19,7 @@ public class AuthFilter implements Filter {
 
 
     private Set<String> prohibits =Collections.unmodifiableSet(new HashSet<>(
-            Arrays.asList("/right/show_application")));
+            Collections.singletonList("/right/show_application")));
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
 

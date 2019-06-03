@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0a8e958-fd17-425f-aac8-b9cc2c7851ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/filter/AuthFilterConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/Common.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/ApplicationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/arch.md" beforeDir="false" afterPath="$PROJECT_DIR$/code/arch.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/J2eefinalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/J2eefinalApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/PunchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/PunchController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/filter/AuthFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/error.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/function.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/function.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/handle_appli.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/handle_appli.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/success.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/code/j2eefinal/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,53 +40,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/PunchController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="76" column="68" selection-start-line="76" selection-start-column="68" selection-end-line="76" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/PunchCard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" selection-start-line="7" selection-end-line="25" selection-end-column="23" />
-              <folding>
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#508#509#0" expanded="true" />
-                <element signature="e#554#555#0" expanded="true" />
-                <element signature="e#590#591#0" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#676#677#0" expanded="true" />
-                <element signature="e#722#723#0" expanded="true" />
-                <element signature="e#759#760#0" expanded="true" />
-                <element signature="e#794#795#0" expanded="true" />
-                <element signature="e#848#849#0" expanded="true" />
-                <element signature="e#896#897#0" expanded="true" />
-                <element signature="e#927#928#0" expanded="true" />
-                <element signature="e#954#955#0" expanded="true" />
-                <element signature="e#994#995#0" expanded="true" />
-                <element signature="e#1026#1027#0" expanded="true" />
-                <element signature="e#1057#1058#0" expanded="true" />
-                <element signature="e#1087#1088#0" expanded="true" />
-                <element signature="e#1130#1131#0" expanded="true" />
-                <element signature="e#1168#1169#0" expanded="true" />
-                <element signature="e#1198#1199#0" expanded="true" />
-                <element signature="e#1227#1228#0" expanded="true" />
-                <element signature="e#1268#1269#0" expanded="true" />
-                <element signature="e#1304#1305#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/PunchCardRepo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -103,29 +51,23 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/ApplicationRepo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/Appli.java">
+        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/J2eefinalApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.7.RELEASE/spring-aop-5.1.7.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="126" column="13" lean-forward="true" selection-start-line="126" selection-start-column="13" selection-end-line="126" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/ApplicationController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="184">
+              <caret line="58" column="87" lean-forward="true" selection-start-line="58" selection-start-column="87" selection-end-line="58" selection-end-column="87" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,10 +76,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/salary.html">
+        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/success.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+            <state relative-caret-position="135">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/arch.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="330">
+                <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -145,7 +99,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/SalaryController.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="441">
               <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
               <folding>
                 <element signature="e#45#579#0" expanded="true" />
@@ -155,21 +109,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/show_record.html">
+        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/filter/AuthFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="9" selection-start-line="9" selection-end-line="17" selection-end-column="9" />
+            <state relative-caret-position="213">
+              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/User.java">
+        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/show_record.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="375">
+              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/ApplicationController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
-                <element signature="e#373#374#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -205,8 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/Staff.java" />
-        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/Record.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/Application.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/PunchCard.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/PunchCardRepository.java" />
@@ -245,17 +218,19 @@
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/salary.html" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/User.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/filter.java" />
-        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/J2eefinalApplication.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/function.html" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/handle_appli.html" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/filter/AuthFilterConfiguration.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/error.jsp" />
-        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/filter/AuthFilter.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/AuthController.java" />
-        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/PunchController.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/ApplicationController.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/Common.java" />
         <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/PunchCardRepo.java" />
+        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/success.html" />
+        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/PunchController.java" />
+        <option value="$PROJECT_DIR$/code/arch.md" />
+        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/J2eefinalApplication.java" />
+        <option value="$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/filter/AuthFilter.java" />
       </list>
     </option>
   </component>
@@ -434,7 +409,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559280425636" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559545386510" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -532,7 +507,7 @@
       <workItem from="1559269556387" duration="2391000" />
       <workItem from="1559278094319" duration="1855000" />
       <workItem from="1559439124965" duration="277000" />
-      <workItem from="1559541283456" duration="253000" />
+      <workItem from="1559541283456" duration="3353000" />
     </task>
     <servers />
   </component>
@@ -554,7 +529,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63059000" />
+    <option name="totallyTimeSpent" value="66159000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -569,7 +544,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23676682" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22389127" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" weight="0.3297568" />
@@ -580,7 +555,7 @@
       <window_info id="Image Layers" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.45903614" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.47211897" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.43493977" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -602,7 +577,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
-      <window_info anchor="right" id="Terminal" order="10" weight="0.66831684" />
+      <window_info anchor="right" id="Terminal" order="10" weight="0.66809726" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -613,7 +588,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/J2eefinalApplication.java</url>
-          <line>127</line>
+          <line>113</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
@@ -628,24 +603,6 @@
           <line>24</line>
           <properties />
           <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/filter/AuthFilter.java</url>
-          <line>39</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/SalaryController.kt</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/SalaryController.kt</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -697,17 +654,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.7.RELEASE/spring-webmvc-5.1.7.RELEASE.jar!/org/springframework/web/servlet/ModelAndView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-          <folding>
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/Department.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-196">
@@ -793,16 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/ApplicationRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -908,20 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/success.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.3.10.Final/hibernate-core-5.3.10.Final.jar!/org/hibernate/dialect/Database.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -962,26 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/J2eefinalApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/filter/AuthFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="46" column="74" selection-start-line="46" selection-start-column="74" selection-end-line="46" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.19/tomcat-embed-core-9.0.19.jar!/org/apache/catalina/connector/RequestFacade.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5625">
@@ -1003,16 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/PunchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="76" column="68" selection-start-line="76" selection-start-column="68" selection-end-line="76" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1056,29 +948,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/SalaryController.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
-          <folding>
-            <element signature="e#45#579#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/show_record.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="9" selection-start-line="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding>
             <element signature="e#373#374#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.7.RELEASE/spring-aop-5.1.7.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="126" column="13" lean-forward="true" selection-start-line="126" selection-start-column="13" selection-end-line="126" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/Appli.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/PunchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1093,16 +992,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.7.RELEASE/spring-aop-5.1.7.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/repo/ApplicationRepo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="126" column="13" lean-forward="true" selection-start-line="126" selection-start-column="13" selection-end-line="126" selection-end-column="13" />
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/arch.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="330">
+            <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/ApplicationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
+        <state relative-caret-position="228">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1110,10 +1029,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/entity/Appli.java">
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/controller/SalaryController.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="441">
+          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+          <folding>
+            <element signature="e#45#579#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/filter/AuthFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/resources/templates/show_record.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/j2eefinal/src/main/java/com/kolibreath/j2eefinal/J2eefinalApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="58" column="87" lean-forward="true" selection-start-line="58" selection-start-column="87" selection-end-line="58" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

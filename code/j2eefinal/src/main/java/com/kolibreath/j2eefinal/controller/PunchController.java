@@ -39,7 +39,7 @@ public class PunchController {
         User user = (User) httpSession.getAttribute(Common.USER_INFO);
         int staffId =user.getUserId();
         List<PunchCard> punchCards = punchCardRepo.findByStaffId(staffId);
-//        punchCards = punchCards.subList(punchCards.size() - 3,punchCards.size());
+        punchCards = punchCards.subList(punchCards.size() - 3,punchCards.size());
 
         List<Record> records = new LinkedList<>();
 
