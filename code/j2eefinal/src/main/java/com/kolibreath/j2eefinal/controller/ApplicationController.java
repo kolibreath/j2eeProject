@@ -5,6 +5,7 @@ import com.kolibreath.j2eefinal.CalUtils;
 import com.kolibreath.j2eefinal.Common;
 import com.kolibreath.j2eefinal.entity.Appli;
 import com.kolibreath.j2eefinal.entity.PunchCard;
+import com.kolibreath.j2eefinal.entity.User;
 import com.kolibreath.j2eefinal.repo.ApplicationRepo;
 import com.kolibreath.j2eefinal.repo.PunchCardRepo;
 import com.kolibreath.j2eefinal.repo.StaffInfoRepo;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
@@ -31,15 +33,17 @@ public class ApplicationController {
 
 
     @RequestMapping("/application")
-    public String handInApplication(HttpServletRequest request){
+    public String handInApplication(HttpServletRequest request, HttpSession httpSession){
         int punchCardRecordId = Integer.parseInt(request.getParameter("recordId"));
         String reason = request.getParameter("reason");
 
         Appli application = new Appli();
 
+        User user = (User) httpSession.getAttribute(Common.USER_INFO);
+
         application.setHandled(false);
         application.setHandlerId(0);
-        application.setApplicantId(Common.currentStaffId);
+        application.setApplicantId(user.getUserId());
         application.setRecordId(punchCardRecordId);
         application.setReason(reason);
 
@@ -48,12 +52,13 @@ public class ApplicationController {
         return "success";
     }
 
-    @RequestMapping("/show_application")
-    public ModelAndView showApplication(){
+    @RequestMapping("/right/show_application")
+    public ModelAndView showApplication(HttpSession session){
         List<Appli> applicationList;
         applicationList  = applicationRepo.findByHandled(false);
 
-        if(Common.currentStaffType == Common.EMPLOYEE) {
+        User user = (User) session.getAttribute(Common.USER_INFO);
+        if(user.getUserType() == Common.EMPLOYEE) {
             ModelAndView modelAndView = new ModelAndView();
             modelAndView.setViewName("/error");
             return modelAndView;
@@ -65,7 +70,7 @@ public class ApplicationController {
         return modelAndView;
     }
 
-    @RequestMapping("/handle_appli")
+    @RequestMapping("/right/handle_appli")
     public String handleApplication(HttpServletRequest request){
         //员工需要改成的状态
         String intendedStatus  =  request.getParameter("intended_status");

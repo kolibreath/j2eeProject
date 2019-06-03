@@ -54,8 +54,7 @@ public class AuthController {
 
         int curStaff= staffInfoRepo.findByUsernameAndPassword(username,password).get(0).getId();
         int staffType = staffRepo.findByStaffId(curStaff).getStaffType();
-        Common.currentStaffId = curStaff;
-        Common.currentStaffType = staffType;
+
 
         User  user = new User(username,curStaff,staffType);
         httpSession.setAttribute(Common.USER_INFO,user);

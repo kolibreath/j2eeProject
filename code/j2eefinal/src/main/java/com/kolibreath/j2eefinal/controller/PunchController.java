@@ -4,6 +4,7 @@ import com.kolibreath.j2eefinal.CalUtils;
 import com.kolibreath.j2eefinal.Common;
 import com.kolibreath.j2eefinal.entity.PunchCard;
 import com.kolibreath.j2eefinal.entity.Staff;
+import com.kolibreath.j2eefinal.entity.User;
 import com.kolibreath.j2eefinal.repo.DepartmentRepo;
 import com.kolibreath.j2eefinal.repo.PunchCardRepo;
 import com.kolibreath.j2eefinal.repo.StaffInfoRepo;
@@ -13,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpSession;
 import java.text.SimpleDateFormat;
 import java.util.LinkedList;
 import java.util.List;
@@ -33,8 +35,9 @@ public class PunchController {
 
     //todo 注意处理传来的数据
     @RequestMapping("/show_record")
-    public ModelAndView showRecords(){
-        int staffId = Common.currentStaffId;
+    public ModelAndView showRecords(HttpSession httpSession){
+        User user = (User) httpSession.getAttribute(Common.USER_INFO);
+        int staffId =user.getUserId();
         List<PunchCard> punchCards = punchCardRepo.findByStaffId(staffId);
 //        punchCards = punchCards.subList(punchCards.size() - 3,punchCards.size());
 
@@ -54,9 +57,10 @@ public class PunchController {
     }
 
     @RequestMapping("/punch_card_signin")
-    public String punchCardSignIn(){
+    public String punchCardSignIn(HttpSession httpSession){
+        User user = (User) httpSession.getAttribute(Common.USER_INFO);
         PunchCard punchCard = new PunchCard();
-        punchCard.setStaffId(Common.currentStaffId);
+        punchCard.setStaffId(user.getUserId());
         punchCard.setSignInStamp(System.currentTimeMillis());
         punchCard.setDate(new SimpleDateFormat("yyyy-MM-dd").format(System.currentTimeMillis()));
         punchCard.setSignOutStamp(0);
@@ -67,9 +71,10 @@ public class PunchController {
     }
 
     @RequestMapping("/punch_card_signout")
-    public String punchCardSignOut(){
+    public String punchCardSignOut(HttpSession session){
+        User user = (User) session.getAttribute(Common.USER_INFO);
         PunchCard punchCard = punchCardRepo.findByDateAndStaffId(new SimpleDateFormat("yyyy-MM-dd")
-                .format(System.currentTimeMillis()),Common.currentStaffId);
+                .format(System.currentTimeMillis()),user.getUserId());
         if (punchCard == null)
             return "error";
         punchCard.setSignOutStamp(System.currentTimeMillis());

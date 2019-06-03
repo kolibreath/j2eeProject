@@ -15,10 +15,6 @@ public class Common {
     public static final int MANAGER  = 101;
     public static boolean IS_PUNCH_STARTED =  false;
 
-    public static int currentStaffId = 0;
-
-    public static int currentStaffType = 0;
-
     public static final String USER_INFO = "USER_INFO";
 
 
